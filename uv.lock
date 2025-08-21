@@ -792,6 +792,7 @@ dependencies = [
     { name = "dotenv" },
     { name = "elasticsearch" },
     { name = "ipywidgets" },
+    { name = "minsearch" },
     { name = "notebook" },
     { name = "ollama" },
     { name = "pandas" },
@@ -804,6 +805,7 @@ requires-dist = [
     { name = "dotenv", specifier = ">=0.9.9" },
     { name = "elasticsearch", specifier = ">=9.1.0" },
     { name = "ipywidgets", specifier = ">=8.1.7" },
+    { name = "minsearch", specifier = ">=0.0.4" },
     { name = "notebook", specifier = "==7.1.2" },
     { name = "ollama", specifier = ">=0.5.3" },
     { name = "pandas", specifier = ">=2.3.1" },
@@ -859,6 +861,20 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/99/5b/a36a337438a14116b16480db471ad061c36c3694df7c2084a0da7ba538b7/matplotlib_inline-0.1.7.tar.gz", hash = "sha256:8423b23ec666be3d16e16b60bdd8ac4e86e840ebd1dd11a30b9f117f2fa0ab90", size = 8159, upload-time = "2024-04-15T13:44:44.803Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/8f/8e/9ad090d3553c280a8060fbf6e24dc1c0c29704ee7d1c372f0c174aa59285/matplotlib_inline-0.1.7-py3-none-any.whl", hash = "sha256:df192d39a4ff8f21b1895d72e6a13f5fcc5099f00fa84384e0ea28c2cc0653ca", size = 9899, upload-time = "2024-04-15T13:44:43.265Z" },
+]
+
+[[package]]
+name = "minsearch"
+version = "0.0.4"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "numpy" },
+    { name = "pandas" },
+    { name = "scikit-learn" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/26/5f/61b6289936f94396e987ecdab7152980bddfccb275bd925390ab3c156049/minsearch-0.0.4.tar.gz", hash = "sha256:ffc118d30bdc9dfc12fd33f4090965202d26f5c493a6c5b5cbc9568e8dd68546", size = 88013, upload-time = "2025-07-11T10:22:48.541Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/fb/f9/95ed2c175f7f8faac968446db7c9c34662b9d9921986f27762f9ef15212c/minsearch-0.0.4-py3-none-any.whl", hash = "sha256:24902a1193b48e781fc0b715be550ced0cc6ba7f6f2a4ee613617b31390439ce", size = 11404, upload-time = "2025-07-11T10:22:47.089Z" },
 ]
 
 [[package]]
