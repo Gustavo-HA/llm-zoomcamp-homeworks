@@ -2,6 +2,7 @@ import ollama
 import json
 import minsearch
 import logging
+import os
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -78,8 +79,14 @@ def rag():
     
     aug_prompt = build_prompt(query, search_results)
 
-    response = llm(aug_prompt)
-    logger.info(f"Response: {response}")
+    if os.getenv("TEST", "False") == "True":
+        logger.info("This is a TEST RUN")
+        for i in range(10):
+            response = llm(aug_prompt)
+    else:
+        response = llm(aug_prompt)
+    
+    logger.info(f"Response from LLM: {response}")
     
     end_time = time.time()
     elapsed_time = end_time - start_time
